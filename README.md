@@ -76,9 +76,14 @@ handled once.
 ```bash
 npm install
 npm test                 # unit tests, no network: the API is mocked with nock
-npx zapier validate      # schema and publishing checks
-npx zapier push          # upload a version to the Zapier account
+npm run validate         # schema and publishing checks
+npm run push             # upload a version to the Zapier account
 ```
+
+The command the Zapier CLI installs is called `zapier-platform`, not `zapier`,
+from version 19 onwards. Anything the Zapier documentation writes as
+`zapier <command>` is `npx zapier-platform <command>` here, or `npm run zapier
+-- <command>`. Signing in is `npx zapier-platform login`.
 
 `LOCKALLY_API_BASE` overrides the API host, for testing against a staging
 environment.

@@ -6,7 +6,9 @@
   "private": true,
   "scripts": {
     "test": "jest --testTimeout 20000",
-    "lint": "eslint ."
+    "zapier": "zapier-platform",
+    "validate": "zapier-platform validate",
+    "push": "zapier-platform push"
   },
   "engines": {
     "node": ">=22",
