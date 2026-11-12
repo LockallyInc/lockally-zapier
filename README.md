@@ -36,8 +36,8 @@ Built on the [Zapier Platform CLI](https://docs.zapier.com/platform/build-cli/ov
 
 ## Connecting
 
-Zapier asks for a Lockally API key. Create one in the Lockally console under
-**API keys**; it begins with `lk_live_`.
+Zapier asks for a Lockally API key. Create one in the Lockally console on the
+**Tokens** page; it begins with `lk_live_`.
 
 Give the key only what you need:
 
@@ -50,9 +50,9 @@ Give the key only what you need:
 | Manage the suppression list | `suppressions:write`, and `suppressions:read` to look one up |
 | See where a sent message got to | `send:read` |
 
-**Mailboxes are granted separately.** A key can be limited to particular
-mailboxes on its own page in the console. The Mailbox dropdown then offers
-exactly those, and a trigger that asks for another one is refused rather than
+**Mailboxes are granted separately.** A key sees only the mailboxes it is
+granted, on the **API Keys** page of the console under the key's **Mailboxes**.
+The Mailbox dropdown offers exactly those, and a trigger that asks for another one is refused rather than
 quietly receiving nothing. A key with no mailbox grants at all cannot use the
 New Email Received trigger; grant it the mailbox it should watch.
 

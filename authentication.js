@@ -59,7 +59,7 @@ module.exports = {
       type: 'password',
       required: true,
       helpText:
-        'From the Lockally console: **API keys**, then **Create key**. It starts with `lk_live_`. Give it the permissions you need: `send:write` to send, `webhooks:read` and `webhooks:write` to start Zaps from Lockally events, `inboxes:read` to read mailboxes, `suppressions:write` for the suppression list. To start Zaps from mail arriving in a mailbox, grant the key that mailbox on the key’s own page. Full details: https://developers.lockally.com/getting-started/authentication/',
+        'From the Lockally console: **Tokens**, then **Create token**. It starts with `lk_live_`. Give it the permissions you need: `send:write` to send, `webhooks:read` and `webhooks:write` to start Zaps from Lockally events, `inboxes:read` to read mailboxes, `suppressions:write` for the suppression list. To start Zaps from mail arriving in a mailbox, grant the key that mailbox on the **API Keys** page, under the key’s **Mailboxes**. A key sees only the mailboxes it is granted. Full details: https://developers.lockally.com/getting-started/authentication/',
     },
   ],
   test,
