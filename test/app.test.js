@@ -213,7 +213,7 @@ describe('Send Email', () => {
         authData,
         inputData: { from: 'hello@acme.test', to: 'one@example.test', text: 'Body' },
       })
-    ).rejects.toThrow(/send:write scope/);
+    ).rejects.toThrow(/send:write permission\. Create a new key/);
   });
 
   it('names the plan when the plan is the problem', async () => {

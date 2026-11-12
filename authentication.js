@@ -32,7 +32,7 @@ const test = async (z, bundle) => {
   // when they reach for something else names the exact scope.
   if (missing.length === SCOPE_USES.length) {
     throw new z.errors.Error(
-      `This key has none of the permissions Lockally for Zapier uses (${SCOPE_USES.map(([s]) => s).join(', ')}). Edit it in the Lockally console under API keys and add the ones you need.`,
+      `This key has none of the permissions Lockally for Zapier uses (${SCOPE_USES.map(([s]) => s).join(', ')}). Create a new key with the ones you need on the Tokens page of the Lockally console, then reconnect with it.`,
       'AuthenticationError',
       403
     );
