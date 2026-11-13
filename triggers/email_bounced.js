@@ -18,7 +18,7 @@ module.exports = buildDeliveryTrigger({
   },
   extraOutputFields: [
     { key: 'bounce_reason', label: 'Bounce reason' },
-    { key: 'smtp_code', label: 'SMTP status code' },
+    { key: 'smtp_code', label: 'SMTP status code', type: 'string' },
     { key: 'smtp_response', label: 'What the receiving server said' },
     { key: 'remote_host', label: 'Receiving server' },
   ],
